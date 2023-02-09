@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  /* -- 1 rem = 10px -- */
+}
+
+/* -- utils  classes --  */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+/* --- styling --- */
+.heading {
+  color: whitesmoke;
+  font-size: 4rem;
+  background-color: lightcoral;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.main-container {
+  background-color: #28282b;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.input-container {
+  /* width: 50rem; */
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 3rem;
+  background-color: lightyellow;
+}
+.inp {
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* --media query-- */
+
+@media screen and (max-width: 768px) {
+  .heading {
+    padding: 0;
+    text-align: center;
+    font-size: 4rem;
+    margin: 2rem 2rem;
+  }
+  .input-container {
+    flex-direction: column;
+  }
+  .inp {
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .input-container {
+    width: 90%;
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 3rem;
+    background-color: lightyellow;
+  }
+} ;
